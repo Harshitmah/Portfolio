@@ -30,7 +30,6 @@ nav{
 }
 .logo{
     width: 140px;
-    margin-top: 10px;
 }
 nav ul li{
     display: inline-block;
@@ -68,6 +67,22 @@ nav ul li a:hover::after{
 }
 .header-text span{
     color: #ff004f;
+}
+.head-btn{
+    margin: 30px auto;
+    width: fit-content;
+    padding: 14px 50px;
+    background-color: #ff004f;
+    border-radius: 6px;
+    transition: background 0.5s;
+}
+.head-btn a{
+    text-decoration: none;
+    color: white;
+}
+.head-btn:hover{
+    background-color: transparent;
+    border: 1px solid #ff004f;
 }
 
 /* - ---------------about---------------- - */
@@ -334,6 +349,23 @@ form .btn2{
     color: #ff004f;
 }
 
+.cv-btn{
+    
+    
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition:0.5s;
+    
+}
+.cv-btn:hover{
+    background: transparent;
+    transform: scale(1.1);
+}
+
 /* ----------------css for small screen----------------- */
 
 nav .fas{
@@ -350,14 +382,15 @@ nav .fas{
 
     }
     .header-text{
-        margin-top: 30%;
+        margin-top: 20%;
         font-size: 16px;
     }
     .header-text h1{
         font-size: 30px;
     }
     nav ul{
-        background: #ff004f;
+        /* background: #ff004f; */
+        background: linear-gradient( #ff004f,rgba(0,0,0,0.6));
         position: fixed;
         top: 0;
         right: -200px;
@@ -383,6 +416,14 @@ nav .fas{
     nav .fas{
         display: block;
         font-size: 25px;
+    }
+    .head-btn{
+        margin: 10px auto;
+    width: fit-content;
+    padding: 7px 20px;
+    background-color: #ff004f;
+    border-radius: 6px;
+    transition: background 0.5s;
     }
     
     .sub-title{
