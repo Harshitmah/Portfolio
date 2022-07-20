@@ -418,9 +418,9 @@ nav .fas{
         font-size: 25px;
     }
     .head-btn{
-        margin: 20px auto;
+     margin: 30px auto;
     width: fit-content;
-    padding: 9px 30px;
+    padding: 10px 35px;
     background-color: #ff004f;
     border-radius: 6px;
     transition: background 0.5s;
