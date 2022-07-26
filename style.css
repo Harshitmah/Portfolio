@@ -164,7 +164,56 @@ nav ul li:hover{
 .tab-contents.active-tab{
     display: block;
 }
+.circle-1{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid black;
+    border-top: 5px solid #ff004f;
+    border-left: 5px solid #ff004f;
+    border-right: 5px solid #ff004f;
+    /* background-color: red; */
+    text-align: center;
+    margin-right: 50px;
+}
+.circle-2{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid black;
+    border-top: 5px solid #ff004f;
+    border-left: 5px solid #ff004f;
+    border-right: 2px solid #ff004f;
+    
+    /* background-color: red; */
+    text-align: center;
+    margin-right: 50px;
+}
+.circle-3{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid black;
+    border-top: 5px solid #ff004f;
+    border-left: 5px solid #ff004f;
+    /* border-right: 5px solid #ff004f; */
+    /* background-color: red; */
+    text-align: center;
+    margin-right: 50px;
+}
+.circle p{
+    color: white;
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+}
+.skill-circles{
+    display: flex;
+    margin-top: 30px;
 
+}
 
 /* -------------------services-------------------- */
 
