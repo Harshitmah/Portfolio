@@ -7,6 +7,11 @@
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./images/Blanka.jpg" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    
+    
     <script
       src="https://kit.fontawesome.com/53340cb732.js"
       crossorigin="anonymous"
@@ -16,9 +21,11 @@
     <div id="header">
       <div class="container">
         <nav>
-          <img src="images/blanka2.png" class="logo" />
+          <a href="index.html">
+            <img src="images/blanka2.png" class="logo" />
+          </a>
           <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
@@ -31,6 +38,7 @@
           <p>UI/UX Designer</p>
           <h1>Hi, I'm <span>Harshit</span><br />Maheshwari From India</h1>
           <button class="head-btn"><a href="#contact">Hire me</a></button>
+          <p class="visitors">Total Visits : <span id="visit">0</span></p>
         </div>
       </div>
     </div>
@@ -139,6 +147,50 @@
         </div>
       </div>
     </div>
+
+
+
+<!-- --------------count--------------------- -->
+
+
+<div id="counting">
+  <div class="container">
+    <div class="row row2">
+      <div class="col-4">
+        <i class="fa-solid fa-bars-progress"></i>
+        <div class="num">03</div>
+        <div class="count-name">
+          Projects
+        </div>
+      </div>
+      <div class="col-4">
+        <i class="fa-solid fa-face-laugh-wink"></i>
+        <div class="num">16</div>
+        
+        <div class="count-name">
+          Happy Clients
+        </div>
+      </div>
+      <div class="col-4">
+        <i class="fa-solid fa-mug-hot"></i>
+        <div class="num">08</div>
+       
+        <div class="count-name">
+          Cup of Coffee
+        </div>
+      </div>
+      <div class="col-4">
+        <i class="fa-solid fa-object-group"></i>
+        <div class="num">32</div>
+        
+        <div class="count-name">
+          Templates
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- -----------portfolio------------- -->
 
@@ -325,5 +377,14 @@
     </div>
 
     <script src="script.js"></script>
+
+
+    
+    <script type="text/javascript">
+
+      $(".num").counterUp({delay:10,time:1000});
+
+    </script>
+
   </body>
 </html>

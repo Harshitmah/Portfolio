@@ -48,3 +48,20 @@ var tablinks = document.getElementsByClassName("tab-links");
       })
       .catch(error => console.error('Error!', error.message))
   })
+
+
+
+  // -----------------------count api---------------------------
+
+
+
+  const countEl = document.getElementById("visit");
+      countvisits();
+
+      function countvisits() {
+        fetch('https://api.countapi.xyz/update/portfolio/count?amount=1')
+          .then((res) => res.json())
+          .then((res) => {
+            countEl.innerHTML = res.value;
+          });
+      }
