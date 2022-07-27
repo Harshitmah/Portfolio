@@ -12,6 +12,72 @@ body{
     background: #080808;
     color: #fff;
 }
+
+#box{
+    display: flex;
+    /* line-height: 50px; */
+  }
+  #box2{
+    display: flex;
+    
+  }
+  
+  #me{
+    display: flex;
+    margin-left: 17px;
+  }
+  
+  .alpha{
+    color: #FFFFFF;
+    font-size: 60px;
+    font-family: 'Almarai',sans-serif;
+    line-height: 50px;
+    /* margin: 4px; */
+    transition: 300.0ms;
+  }
+  
+  .alpha.animated{
+    color: #ff004f;
+    animation: ani 0.7s ease-in-out 1;
+  }
+  
+  @keyframes ani {
+    0%{
+      transform: scale(1.2,0.5);
+    }
+    16%{
+      transform: scale(1.2,0.5);
+    }
+    25%{
+      transform: scale(1.2,0.5);
+    }
+    32%{
+      transform: scale(0.8,1.1);
+    }
+    48%{
+      transform: scale(0.95,1);
+    }
+    64%{
+      transform: scale(0.8,1.2);
+    }
+    80%{
+      transform: scale(1.15,1);
+    }
+    87%{
+      transform: scale(1.15,1);
+    }
+    90%{
+      /* This will add the shaking effect one time almost at the end   */
+      transform: scale(0.8,1);
+    }
+    95%{
+      transform: scale(1.05,1);
+    }
+    100%{
+      transform: scale(1,1);
+    }
+  }
+  
 #header{
     width: 100%;
     height: 100vh;
@@ -62,8 +128,18 @@ nav ul li:hover{
     transform: scale(1.1);
 }
 .header-text{
-    margin-top: 20%;
+    margin-top: 19%;
     font-size: 30px;
+}
+.box1 .alpha{
+        font-size: 30px;
+        font-weight: 500;
+}
+.box1 #me{
+    margin-left: 9px;
+}
+.box2 #me{
+    margin-left: 15px;
 }
 .header-text h1{
     font-size: 60px;
@@ -531,12 +607,34 @@ nav .fas{
         background-image: url(./images/phone-background.jpg);
 
     }
+
+    .box1 .alpha{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .box2 .alpha{
+        font-size: 30px;
+        line-height: 15px; 
+    }
+    .box2 #me{
+        margin-left: 6px;
+    }
+    .box3 .alpha{
+        font-size: 30px;
+        margin-top: 4px;
+    }
+
+    #me{
+        margin-left: 10px;
+    }
+   
     .header-text{
         margin-top: 20%;
-        font-size: 16px;
+        /* font-size: 16px; */
     }
     .header-text h1{
         font-size: 30px;
+        
     }
     nav ul{
         /* background: #ff004f; */
@@ -577,7 +675,7 @@ nav .fas{
     }
     
     
-    .sub-title{
+    .sub-title .alpha{
         font-size: 40px;
     }
     .about-col-1, .about-col-2{
@@ -628,6 +726,26 @@ nav .fas{
         font-size: 8px;
         font-weight: 800;
         margin-top: -20px;
+    }
+    .circle-1{
+        width: 40px;
+        height: 40px;
+    }
+    .circle-2{
+        width: 40px;
+        height: 40px;
+    }
+    .circle-3{
+        width: 40px;
+        height: 40px;
+    }
+    .circle p{
+        color: white;
+        margin-top: 10px;
+        margin-left: 5px;
+        font-size:10px;
+        line-height: 12px;
+        text-align: center;
     }
 }
 #msg{
